@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/BallBounce/BallBounce.iml" filepath="$PROJECT_DIR$/BallBounce/BallBounce.iml" />
       <module fileurl="file://$PROJECT_DIR$/Git_Test2.iml" filepath="$PROJECT_DIR$/Git_Test2.iml" />
       <module fileurl="file://$PROJECT_DIR$/MoveBall/MoveBall.iml" filepath="$PROJECT_DIR$/MoveBall/MoveBall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Panel_Sample/Panel_Sample.iml" filepath="$PROJECT_DIR$/Panel_Sample/Panel_Sample.iml" />
     </modules>
   </component>
 </project>
