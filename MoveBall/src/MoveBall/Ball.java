@@ -23,9 +23,9 @@ public class Ball {
 
     public void move()
     {
-        if(x + xSpeed > 0 && x + xSpeed < display.getWidth() - radius)
+        if(x + xSpeed >= 0 && x + xSpeed <= display.getWidth() - radius)
             x += xSpeed;
-        if(y + ySpeed > 0 && y + ySpeed < display.getHeight() - radius)
+        if(y + ySpeed >= 0 && y + ySpeed <= display.getHeight() - radius)
             y += ySpeed;
     }
 
@@ -51,6 +51,16 @@ public class Ball {
             ySpeed = -5;
         else if(e.getKeyCode() == KeyEvent.VK_DOWN)
             ySpeed = 5;
+    }
+
+    public int getX()
+    {
+        return x;
+    }
+
+    public int getY()
+    {
+        return y;
     }
 
     public void paint(Graphics2D g)

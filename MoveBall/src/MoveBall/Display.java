@@ -43,9 +43,10 @@ public class Display extends JPanel {
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
         ball.paint(g2d);
-
-
+        g2d.drawString("X :" + String.valueOf(ball.getX()), getWidth() - 40, 20);
+        g2d.drawString("Y :" + String.valueOf(ball.getY()), getWidth() - 40, 40);
     }
+
 
     public static void main(String[] args)  throws InterruptedException
     {
