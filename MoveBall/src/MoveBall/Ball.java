@@ -23,12 +23,10 @@ public class Ball {
 
     public void move()
     {
-        x += xSpeed;
-        y += ySpeed;
-//        if((x + xSpeed - radius > 0) && (x + xSpeed < display.getWidth() - radius))
-//        {
-//
-//        }
+        if(x + xSpeed > 0 && x + xSpeed < display.getWidth() - radius)
+            x += xSpeed;
+        if(y + ySpeed > 0 && y + ySpeed < display.getHeight() - radius)
+            y += ySpeed;
     }
 
     public void keyReleased(KeyEvent e)
