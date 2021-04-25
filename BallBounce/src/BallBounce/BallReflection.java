@@ -1,5 +1,7 @@
 package BallBounce;
 
+//Original work
+//http://www.groovy-number.com/java/sample/BallReflection.html
 import java.awt.Color;
 import java.lang.String;
 import javax.swing.JFrame;
