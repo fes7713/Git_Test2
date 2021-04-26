@@ -6,11 +6,11 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class Display extends JPanel {
-    Ball b1;
+    TracerBall tb1;
 //    Graphics g;
     public Display()
     {
-        b1 = new Ball(this, 80, 80, 0, 0, 20);
+        tb1 = new TracerBall(this, 80, 80, 0, 0, 20, 20);
 //        setTitle(title);
 //        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //        setBounds(20, 20, 300, 200);
@@ -28,12 +28,12 @@ public class Display extends JPanel {
 
             @Override
             public void keyPressed(KeyEvent e) {
-                b1.keyPressed(e);
+                tb1.keyPressed(e);
             }
 
             @Override
             public void keyReleased(KeyEvent e) {
-                b1.keyReleased(e);
+                tb1.keyReleased(e);
             }
         };
         addKeyListener(kl);
@@ -46,9 +46,10 @@ public class Display extends JPanel {
         Graphics2D g2d = (Graphics2D) g;
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-        b1.paint(g2d);
-        g2d.drawString("X :" + String.valueOf(b1.getX()), getWidth() - 40, 20);
-        g2d.drawString("Y :" + String.valueOf(b1.getY()), getWidth() - 40, 40);
+        tb1.paint(g2d);
+        g2d.setColor(new Color(0, 0, 0));
+        g2d.drawString("X :" + String.valueOf(tb1.getX()), getWidth() - 40, 20);
+        g2d.drawString("Y :" + String.valueOf(tb1.getY()), getWidth() - 40, 40);
     }
 
     public static void main(String[] args) throws InterruptedException {
@@ -61,7 +62,7 @@ public class Display extends JPanel {
 
         while(true)
         {
-            game.b1.move();
+            game.tb1.move();
             game.repaint();
             Thread.sleep(10);
         }

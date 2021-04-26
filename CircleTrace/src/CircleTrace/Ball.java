@@ -7,17 +7,20 @@ public class Ball extends Figure{
     int radius;
     final int INITIAL_RADIUS = 20;
 
-    Stack<int[][]> tracePos;
 
     public Ball() {
         this.radius = INITIAL_RADIUS;
-        tracePos = new Stack<>();
     }
 
     public Ball(Display display, int x, int y, int xSpeed, int ySpeed, int radius) {
         super(display, x, y, xSpeed, ySpeed);
         this.radius = radius;
-        tracePos = new Stack<>();
+    }
+
+    public Ball(Display display, int x, int y, int radius)
+    {
+        super(display, x, y);
+        this.radius = radius;
     }
 
     public void move()
