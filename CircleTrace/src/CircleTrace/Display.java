@@ -10,7 +10,7 @@ public class Display extends JPanel {
 //    Graphics g;
     public Display()
     {
-        tb1 = new TracerBall(this, 80, 80, 0, 0, 20, 20);
+        tb1 = new TracerBall(this, 80, 80, 0, 0, 20, 100);
 //        setTitle(title);
 //        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //        setBounds(20, 20, 300, 200);

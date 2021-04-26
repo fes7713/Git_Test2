@@ -42,9 +42,10 @@ public class TracerBall extends Ball{
 
         Iterator<Ball> iter = tracerBalls.iterator();
         int i = 0;
+        int size = tracerBalls.size();
         for(Ball b :tracerBalls)
         {
-            g.setColor(new Color(255, 0, 0, (int)(((capacity - i)/(float)capacity*255)*0.5)));
+            g.setColor(new Color(255, 0, 0, (int)(((size - i)/(float)size*255)*0.5)));
             i++;
             b.paint(g);
         }
