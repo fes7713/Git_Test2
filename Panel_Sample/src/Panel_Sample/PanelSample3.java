@@ -25,7 +25,7 @@ public class PanelSample3 extends JFrame {
         JButton btn1 = new JButton("NORTH");
         JButton btn2 = new JButton("South");
         p.add(btn1,BorderLayout.NORTH);
-        p.add(btn2, BorderLayout.SOUTH);
+        p.add(btn2, BorderLayout.CENTER);
 
         Container contentPane = getContentPane();
         contentPane.add(p);
