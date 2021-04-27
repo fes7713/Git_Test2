@@ -43,6 +43,8 @@ public class Display extends JPanel {
         JFrame frame = new JFrame("Simple game");
         Display game = new Display();
         frame.add(game);
+
+
         frame.setSize(500, 700);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
